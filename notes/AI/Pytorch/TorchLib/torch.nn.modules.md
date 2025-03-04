@@ -1,0 +1,13 @@
+
+- nn.moduls是网络层工具包，其中含有各类网络层基类及其管理工具
+	- 网络层基类module
+	- 线性变换linear
+	- 激活函数activation
+	- 容器container
+	- 卷积网络conv
+	- 正则化dropout
+	- 损失函数loss
+	- 标准化normalization
+	- 填充padding
+	- 池化pooling
+	- 变形器transformer
