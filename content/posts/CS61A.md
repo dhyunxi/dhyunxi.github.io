@@ -1,6 +1,4 @@
 
-
-
 # CS61A
 ---
 ## Function
