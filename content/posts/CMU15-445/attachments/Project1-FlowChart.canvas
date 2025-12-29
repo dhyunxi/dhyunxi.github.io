@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"03fb7ff6e24f1106","type":"text","text":"BPM::CheckedWritePage","x":-195,"y":0,"width":250,"height":60},
+		{"id":"df0c47788e2cd7d4","type":"text","text":"没有空的Frame：\nLRUK::Evict\n返回可以驱逐的Frame","x":-57,"y":280,"width":262,"height":110},
+		{"id":"43a240666b49f679","type":"text","text":"FlushFrame\n写回Frame","x":240,"y":305,"width":250,"height":60},
+		{"id":"109f6a371a3f610e","type":"text","text":"BPM::WritePage\n返回WritePageGuard","x":-195,"y":-100,"width":250,"height":60},
+		{"id":"55ebcd0cb2076946","type":"text","text":"Send Request to buffer pool manager","x":-240,"y":-260,"width":340,"height":60},
+		{"id":"615bc744c5898977","x":-490,"y":-100,"width":250,"height":60,"type":"text","text":"BPM::FlushPage"},
+		{"id":"005b27166ef02b47","type":"text","text":"BPM::FetchPage\n返回存储Page数据的Frame","x":-207,"y":100,"width":275,"height":60},
+		{"id":"8b032972fd36af1d","type":"text","text":"BPM::NewFrame\n获取一个空的Frame","x":-194,"y":180,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"368f4effc3fdd0d0","fromNode":"8b032972fd36af1d","fromSide":"bottom","toNode":"df0c47788e2cd7d4","toSide":"top"},
+		{"id":"e61a18ef319960d0","fromNode":"55ebcd0cb2076946","fromSide":"bottom","toNode":"615bc744c5898977","toSide":"top"},
+		{"id":"6bff20c1b4cc4bae","fromNode":"55ebcd0cb2076946","fromSide":"bottom","toNode":"109f6a371a3f610e","toSide":"top"},
+		{"id":"cfb46869d5502819","fromNode":"109f6a371a3f610e","fromSide":"bottom","toNode":"03fb7ff6e24f1106","toSide":"top"},
+		{"id":"7133b5d56e5a0a72","fromNode":"03fb7ff6e24f1106","fromSide":"bottom","toNode":"005b27166ef02b47","toSide":"top"},
+		{"id":"2e95b1b7d70f105d","fromNode":"005b27166ef02b47","fromSide":"bottom","toNode":"8b032972fd36af1d","toSide":"top"},
+		{"id":"68c34e137c2821c1","fromNode":"df0c47788e2cd7d4","fromSide":"right","toNode":"43a240666b49f679","toSide":"left"}
+	]
+}
