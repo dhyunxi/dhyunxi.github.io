@@ -114,7 +114,7 @@ params:
   profileMode:
     enabled: true
     title: "DHyunxi"
-    imageUrl: "./assets/images/laojun.jpg" # 或放到 assets 并用相对路径
+    imageUrl: "/images/laojun.jpg" # 或放到 assets 并用相对路径
     imageTitle: "Profile Picture"
     subtitle: "Future for Future"
     buttons:
